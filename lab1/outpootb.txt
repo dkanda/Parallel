@@ -1,0 +1,3 @@
+Thu Feb 21 09:03:13 PST 2013
+Elapsed time = 712922 microseconds
+Thu Feb 21 09:03:14 PST 2013

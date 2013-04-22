@@ -1,0 +1,104 @@
+Sun Feb 24 17:06:38 PST 2013
+Warning: Permanently added 'sbx82-004,192.168.100.39' (RSA) to the list of known hosts.
+Warning: Permanently added 'sbx82-002,192.168.100.37' (RSA) to the list of known hosts.
+Warning: Permanently added 'sbx82-003,192.168.100.38' (RSA) to the list of known hosts.
+[sbx82-005:11486] *** Process received signal ***
+[sbx82-005:11486] Signal: Segmentation fault (11)
+[sbx82-005:11486] Signal code: Address not mapped (1)
+[sbx82-005:11486] Failing at address: 0x8
+[sbx82-005:11485] *** Process received signal ***
+[sbx82-005:11485] Signal: Segmentation fault (11)
+[sbx82-005:11485] Signal code: Address not mapped (1)
+[sbx82-005:11485] Failing at address: 0x8
+[sbx82-003:12295] *** Process received signal ***
+[sbx82-003:12295] Signal: Segmentation fault (11)
+[sbx82-003:12295] Signal code: Address not mapped (1)
+[sbx82-003:12295] Failing at address: 0x8
+[sbx82-004:14082] *** Process received signal ***
+[sbx82-004:14082] Signal: Segmentation fault (11)
+[sbx82-004:14082] Signal code: Address not mapped (1)
+[sbx82-004:14082] Failing at address: 0x8
+[sbx82-003:12296] *** Process received signal ***
+[sbx82-003:12296] Signal: Segmentation fault (11)
+[sbx82-003:12296] Signal code: Address not mapped (1)
+[sbx82-003:12296] Failing at address: 0x8
+[sbx82-004:14083] *** Process received signal ***
+[sbx82-005:11486] [ 0] /lib64/libpthread.so.0 [0x2b5ab6ca3b70]
+[sbx82-005:11486] [ 1] /lib64/libc.so.6(strlen+0x30) [0x2b5ab6f2ab80]
+[sbx82-005:11486] [ 2] /lib64/libc.so.6(_IO_vfprintf+0x4479) [0x2b5ab6ef7cb9]
+[sbx82-005:11486] [ 3] /lib64/libc.so.6(_IO_printf+0x9a) [0x2b5ab6efe54a]
+[sbx82-005:11486] [ 4] /home/cpsc435_s13/dkanda/lab2/lab2(main+0x85) [0x40095d]
+[sbx82-005:11486] [ 5] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2b5ab6ece994]
+[sbx82-005:11486] [ 6] /home/cpsc435_s13/dkanda/lab2/lab2 [0x400829]
+[sbx82-005:11486] *** End of error message ***
+[sbx82-004:14083] Signal: Segmentation fault (11)
+[sbx82-004:14083] Signal code: Address not mapped (1)
+[sbx82-004:14083] Failing at address: 0x8
+[sbx82-005:11485] [ 0] /lib64/libpthread.so.0 [0x2b614da81b70]
+[sbx82-005:11485] [ 1] /lib64/libc.so.6(strlen+0x30) [0x2b614dd08b80]
+[sbx82-005:11485] [ 2] /lib64/libc.so.6(_IO_vfprintf+0x4479) [0x2b614dcd5cb9]
+[sbx82-005:11485] [ 3] /lib64/libc.so.6(_IO_printf+0x9a) [0x2b614dcdc54a]
+[sbx82-005:11485] [ 4] /home/cpsc435_s13/dkanda/lab2/lab2(main+0x85) [0x40095d]
+[sbx82-005:11485] [ 5] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2b614dcac994]
+[sbx82-005:11485] [ 6] /home/cpsc435_s13/dkanda/lab2/lab2 [0x400829]
+[sbx82-005:11485] *** End of error message ***
+[sbx82-002:13009] *** Process received signal ***
+[sbx82-002:13009] Signal: Segmentation fault (11)
+[sbx82-002:13009] Signal code: Address not mapped (1)
+[sbx82-002:13009] Failing at address: 0x8
+[sbx82-002:13010] *** Process received signal ***
+[sbx82-002:13010] Signal: Segmentation fault (11)
+[sbx82-002:13010] Signal code: Address not mapped (1)
+[sbx82-002:13010] Failing at address: 0x8
+[sbx82-004:14082] [ 0] /lib64/libpthread.so.0 [0x2b6fc0e3eb70]
+[sbx82-004:14082] [ 1] /lib64/libc.so.6(strlen+0x30) [0x2b6fc10c5b80]
+[sbx82-004:14082] [ 2] /lib64/libc.so.6(_IO_vfprintf+0x4479) [0x2b6fc1092cb9]
+[sbx82-004:14082] [ 3] /lib64/libc.so.6(_IO_printf+0x9a) [0x2b6fc109954a]
+[sbx82-004:14082] [ 4] /home/cpsc435_s13/dkanda/lab2/lab2(main+0x85) [0x40095d]
+[sbx82-004:14082] [ 5] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2b6fc1069994]
+[sbx82-004:14082] [ 6] /home/cpsc435_s13/dkanda/lab2/lab2 [0x400829]
+[sbx82-003:12295] [ 0] /lib64/libpthread.so.0 [0x2b6ad4784b70]
+[sbx82-003:12295] [ 1] /lib64/libc.so.6(strlen+0x30) [0x2b6ad4a0bb80]
+[sbx82-003:12295] [ 2] /lib64/libc.so.6(_IO_vfprintf+0x4479) [0x2b6ad49d8cb9]
+[sbx82-003:12295] [ 3] /lib64/libc.so.6(_IO_printf+0x9a) [0x2b6ad49df54a]
+[sbx82-003:12295] [ 4] /home/cpsc435_s13/dkanda/lab2/lab2(main+0x85) [0x40095d]
+[sbx82-003:12295] [ 5] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2b6ad49af994]
+[sbx82-003:12295] [ 6] /home/cpsc435_s13/dkanda/lab2/lab2 [0x400829]
+[sbx82-004:14082] *** End of error message ***
+[sbx82-003:12295] *** End of error message ***
+[sbx82-003:12296] [ 0] /lib64/libpthread.so.0 [0x2ace2e54eb70]
+[sbx82-003:12296] [ 1] /lib64/libc.so.6(strlen+0x30) [0x2ace2e7d5b80]
+[sbx82-003:12296] [ 2] /lib64/libc.so.6(_IO_vfprintf+0x4479) [0x2ace2e7a2cb9]
+[sbx82-004:14083] [ 0] /lib64/libpthread.so.0 [0x2aefa6025b70]
+[sbx82-004:14083] [ 1] /lib64/libc.so.6(strlen+0x30) [0x2aefa62acb80]
+[sbx82-004:14083] [ 2] /lib64/libc.so.6(_IO_vfprintf+0x4479) [0x2aefa6279cb9]
+[sbx82-004:14083] [ 3] /lib64/libc.so.6(_IO_printf+0x9a) [0x2aefa628054a]
+[sbx82-004:14083] [ 4] /home/cpsc435_s13/dkanda/lab2/lab2(main+0x85) [0x40095d]
+[sbx82-003:12296] [ 3] /lib64/libc.so.6(_IO_printf+0x9a) [0x2ace2e7a954a]
+[sbx82-003:12296] [ 4] /home/cpsc435_s13/dkanda/lab2/lab2(main+0x85) [0x40095d]
+[sbx82-003:12296] [ 5] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2ace2e779994]
+[sbx82-003:12296] [ 6] /home/cpsc435_s13/dkanda/lab2/lab2 [0x400829]
+[sbx82-003:12296] *** End of error message ***
+[sbx82-004:14083] [ 5] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2aefa6250994]
+[sbx82-004:14083] [ 6] /home/cpsc435_s13/dkanda/lab2/lab2 [0x400829]
+[sbx82-004:14083] *** End of error message ***
+[sbx82-002:13009] [ 0] /lib64/libpthread.so.0 [0x2ac25c1d3b70]
+[sbx82-002:13009] [ 1] /lib64/libc.so.6(strlen+0x30) [0x2ac25c45ab80]
+[sbx82-002:13009] [ 2] /lib64/libc.so.6(_IO_vfprintf+0x4479) [0x2ac25c427cb9]
+[sbx82-002:13009] [ 3] /lib64/libc.so.6(_IO_printf+0x9a) [0x2ac25c42e54a]
+[sbx82-002:13009] [ 4] /home/cpsc435_s13/dkanda/lab2/lab2(main+0x85) [0x40095d]
+[sbx82-002:13009] [ 5] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2ac25c3fe994]
+[sbx82-002:13009] [ 6] /home/cpsc435_s13/dkanda/lab2/lab2 [0x400829]
+[sbx82-002:13009] *** End of error message ***
+[sbx82-002:13010] [ 0] /lib64/libpthread.so.0 [0x2abc8e3b7b70]
+[sbx82-002:13010] [ 1] /lib64/libc.so.6(strlen+0x30) [0x2abc8e63eb80]
+[sbx82-002:13010] [ 2] /lib64/libc.so.6(_IO_vfprintf+0x4479) [0x2abc8e60bcb9]
+[sbx82-002:13010] [ 3] /lib64/libc.so.6(_IO_printf+0x9a) [0x2abc8e61254a]
+[sbx82-002:13010] [ 4] /home/cpsc435_s13/dkanda/lab2/lab2(main+0x85) [0x40095d]
+[sbx82-002:13010] [ 5] /lib64/libc.so.6(__libc_start_main+0xf4) [0x2abc8e5e2994]
+[sbx82-002:13010] [ 6] /home/cpsc435_s13/dkanda/lab2/lab2 [0x400829]
+[sbx82-002:13010] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 11486 on node sbx82-005 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+Sun Feb 24 17:06:38 PST 2013

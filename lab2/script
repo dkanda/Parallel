@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS-l nodes=4:ppn=2
+#PBS-l walltime=01:00:00
+#PBS-o /home/cpsc435_s13/dkanda/lab2/lab2out.txt
+#PBS-j oe
+#PBS-N my_pbs_job
+
+date
+
+export NPROCS=`wc -l $PBS_NODEFILE |gawk '//{print $1}'`
+export MCA_OPTS="--mca btl_tcp_if_include eth0 --mca oob_tcp_if_include eth0 --mca btl_tcp_endpoint_cache 65536 --mca oob_tcp_peer_retries 120 --mca oob_tcp_listen_mode listen_thread --mca btl self,tcp"
+export PROGRAM="/home/cpsc435_s13/dkanda/lab2/lab2"
+mpirun -np $NPROCS -machinefile $PBS_NODEFILE $MCA_OPTS $PROGRAM
+
+date
+
+exit 0

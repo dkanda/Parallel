@@ -1,0 +1,13 @@
+Sun Feb 24 17:01:42 PST 2013
+Warning: Permanently added 'sbx82-004,192.168.100.39' (RSA) to the list of known hosts.
+Warning: Permanently added 'sbx82-002,192.168.100.37' (RSA) to the list of known hosts.
+Warning: Permanently added 'sbx82-003,192.168.100.38' (RSA) to the list of known hosts.
+Hello world! I am 0 of 8 on sbx82-005
+Hello world! I am 1 of 8 on sbx82-005
+Hello world! I am 4 of 8 on sbx82-003
+Hello world! I am 2 of 8 on sbx82-004
+Hello world! I am 5 of 8 on sbx82-003
+Hello world! I am 3 of 8 on sbx82-004
+Hello world! I am 6 of 8 on sbx82-002
+Hello world! I am 7 of 8 on sbx82-002
+Sun Feb 24 17:01:43 PST 2013

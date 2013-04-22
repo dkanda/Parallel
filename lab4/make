@@ -1,0 +1,9 @@
+#mpicc seq.c para.c -o output
+#mpicc -o lab4 -lm para.c
+mpicc -c seq.c
+mpicc para.c seq.o 
+rm -f seq.h.gch
+rm -f seq.o
+rm -f seq
+rm -f para.o
+qsub script

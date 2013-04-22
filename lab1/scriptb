@@ -1,0 +1,19 @@
+#!/bin/bash
+# Set the maximum walltime for our job
+#PBS -l walltime=06:00:00
+# Set the file for the output of the job
+#PBS -o /home/cpsc435_s13/dkanda/lab1/outpootb.txt
+# Merge the error and output files
+#PBS -j oe
+# Give our job a name to track in qstat
+#PBS -N howsitgoing
+
+ date
+
+ export PATH=/home/cpsc435_s13/dkanda/lab1:$PATH
+ export PBS_O_PATH=$PATH
+
+ /home/cpsc435_s13/dkanda/lab1/lab1b -args
+
+ date
+ exit 0

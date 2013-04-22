@@ -1,0 +1,8 @@
+#mpicc seq.c para.c -o output
+#mpicc -o lab4 -lm para.c
+gcc -c seq.c
+gcc para.c seq.o -o lab7 -lpthread
+rm -f seq.h.gch
+rm -f seq.o
+rm -f seq
+rm -f para.o

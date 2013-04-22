@@ -1,0 +1,13 @@
+Fri Mar  1 11:11:40 PST 2013
+Warning: Permanently added 'sbx82-004,192.168.100.39' (RSA) to the list of known hosts.
+Warning: Permanently added 'sbx82-002,192.168.100.37' (RSA) to the list of known hosts.
+Warning: Permanently added 'sbx82-003,192.168.100.38' (RSA) to the list of known hosts.
+Process 1: my ID is 23510, the smallest process ID 22608 is from 4 
+Process 0: my ID is 23509, the smallest process ID 22608 is from 4 
+Process 3: my ID is 24844, the smallest process ID 22608 is from 4 
+Process 5: my ID is 22609, the smallest process ID 22608 is from 4 
+Process 2: my ID is 24843, the smallest process ID 22608 is from 4 
+Process 4: my ID is 22608, the smallest process ID 22608 is from 4 
+Process 6: my ID is 23545, the smallest process ID 22608 is from 4 
+Process 7: my ID is 23546, the smallest process ID 22608 is from 4 
+Fri Mar  1 11:11:40 PST 2013
