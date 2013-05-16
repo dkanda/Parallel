@@ -13,11 +13,6 @@
 #include <stdlib.h>
 #include "seq.h"
 
-// void BubbleSort(int array[], int n);
-// void Swap(int array[], int left, int right);
-// void Quicksort(int array[], int left, int right);
-// int Partition(int array[], int left, int right, int pivot_index);
-// void display(int array[], int length);
 
 
 void display(int array[], int length)
