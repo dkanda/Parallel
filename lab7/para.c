@@ -1,5 +1,6 @@
-
-
+//@author David Kanda (dkanda)
+//@date 4/8/2013
+//@description Program to sort array of integers using threads and odd-even sorting
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,9 +8,9 @@
 #include <time.h>
 #include "seq.h"
 
-const int RMAX = 5;
+const int RMAX = 5; //random numbers range from 1 to this number
 
-int n, npes;
+int n, npes; //n is length of array, npes is number of threads to use
 int chunksize, my_rank,npes;
 int *masterArray;
 
@@ -29,9 +30,9 @@ int main(int argc, char* argv[]) {
 
   int t, i, rc;
   double start, finish;
-  n = atoi(argv[1]);
-  npes = atoi(argv[2]);
-  chunksize = n/npes;
+  n = atoi(argv[1]); //get array length argument from command line
+  npes = atoi(argv[2]); //get number of threads argument from command line
+  chunksize = n/npes; //calculate how big each chunk a thread should get
 
   pthread_t threads[npes];
   struct timeval tempo1, tempo2; //struct to get execution time
@@ -39,14 +40,14 @@ int main(int argc, char* argv[]) {
   pthread_mutex_init(&minimum_value_lock, NULL);
   pthread_barrier_init(&bar, NULL, npes);
 
-  CreateRandomArray();
+  CreateRandomArray();//create an array of length n
 
   evenRanks = (int*) malloc(npes*sizeof(int));
   oddRanks = (int*) malloc(npes*sizeof(int));
 
   gettimeofday(&tempo1, NULL); //start the clock 
 
-  //if more than one thread
+  //if more than one thread, create the threads
   if(npes != 1)
   {
     for(t=0; t<npes; t++)
@@ -85,6 +86,7 @@ int main(int argc, char* argv[]) {
   return 0;
 }  
 
+//prints all the elements located in masterArray
 void PrintArray()
 {
    int i;
@@ -93,6 +95,7 @@ void PrintArray()
    printf("\n");
 }
 
+//creates an array of length n of random numbers
 void CreateRandomArray() 
 {
   int i;
@@ -103,7 +106,7 @@ void CreateRandomArray()
 
 }  
 
-
+//function to compare size of integers
 int Compare(const void* a_p, const void* b_p) {
    int a = *((int*)a_p);
    int b = *((int*)b_p);
@@ -117,6 +120,7 @@ int Compare(const void* a_p, const void* b_p) {
 }  /* Compare */
 
 
+//threaded sort function by using odd-even sorting
 void *Sort(void *threadid) {
   int phase, i, j;
   int *tempArrayB, *tempArrayC;  
@@ -147,7 +151,7 @@ void *Sort(void *threadid) {
   {
     if(j%2 != 0 && threadRank != npes-1 && threadRank != 0) //odd, separate first and last nodes
     {
-      pthread_mutex_lock(&minimum_value_lock);
+      pthread_mutex_lock(&minimum_value_lock); //enter critical section
       if(threadRank % 2 ==0) //rank is even
       {
         for(i = 0; i < chunksize*2; i++)
@@ -171,11 +175,11 @@ void *Sort(void *threadid) {
 
       }
 
-      pthread_mutex_unlock(&minimum_value_lock);
+      pthread_mutex_unlock(&minimum_value_lock); //leave critical section
     }
     else //even
     {
-      pthread_mutex_lock(&minimum_value_lock);
+      pthread_mutex_lock(&minimum_value_lock); //enter critical section
 
       if(threadRank % 2 ==0) //rank is even
       {
@@ -199,7 +203,7 @@ void *Sort(void *threadid) {
 
       }
 
-      pthread_mutex_unlock(&minimum_value_lock);
+      pthread_mutex_unlock(&minimum_value_lock); //leave critical section
     }
     pthread_barrier_wait(&bar);
   }
@@ -208,7 +212,9 @@ void *Sort(void *threadid) {
   free(tempArrayC);
 }  
 
-
+//given a list of 2*n elements, start at the smallest index and
+//    find the smallest elements in the array until n elements 
+//    are found 
 SortAndKeepLower(int localArray[])
 {
   int *tempA; 
@@ -231,6 +237,9 @@ SortAndKeepLower(int localArray[])
 
 }
 
+//given a list of 2*n elements, start at the largest index and
+//    find the largest  elements in the array until n elements 
+//    are found 
 SortAndKeepUpper(int localArray[])
 {
   int a, b, c, i;
